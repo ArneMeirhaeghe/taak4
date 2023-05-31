@@ -1,0 +1,380 @@
+/**
+ * A Design System Template
+ */
+
+/**
+ * Imports
+ */
+@import url("https://fonts.googleapis.com/css?family=Overpass:400|Chivo:400");
+
+/**
+ * Design System Variables
+ */
+
+:root {
+  /* Define color as color */
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 100%, 100%);
+  /* prime */
+  --primeLight1: hsl(0, 100%, 97%);
+  --primeLight2: hsl(0, 77%, 78%);
+  --primeLight3: hsl(0, 71%, 66%);
+  --primeLight4: hsl(0, 64%, 55%);
+  --prime: hsl(0, 67%, 44%);
+  --primeDark1: hsl(0, 72%, 38%);
+  --primeDark2: hsl(0, 79%, 32%);
+  --primeDark3: hsl(0, 85%, 25%);
+  --primeDark4: hsl(0, 92%, 20%);
+
+  /* secondary */
+  --secondaryLight1: hsl(49, 100%, 96%);
+  --secondaryLight2: hsl(48, 100%, 88%);
+  --secondaryLight3: hsl(48, 95%, 76%);
+  --secondaryLight4: hsl(48, 94%, 68%);
+  --secondary: hsl(44, 92%, 63%);
+  --secondaryDark1: hsl(36, 77%, 49%);
+  --secondaryDark2: hsl(29, 80%, 44%);
+  --secondaryDark3: hsl(22, 82%, 39%);
+  --secondaryDark4: hsl(15, 86%, 30%);
+
+  /* neutrals */
+  --neutralLight1: hsl(43, 13%, 90%);
+  --neutralLight2: hsl(40, 15%, 80%);
+  --neutralLight3: hsl(39, 11%, 69%);
+  --neutralLight4: hsl(41, 8%, 61%);
+  --neutral: hsl(0, 0%, 44%);
+  --neutralDark1: hsl(41, 9%, 35%);
+  --neutralDark2: hsl(38, 11%, 28%);
+  --neutralDark3: hsl(40, 13%, 23%);
+  --neutralDark4: hsl(42, 15%, 13%);
+
+  /* supp */
+  --supp: hsl(185, 81%, 29%);
+
+  /* Color intentions */
+  --textColor: var(--primeDark4);
+  --background: var(--primeLight1);
+  --buttonBackground: var(--secondary);
+  --buttonText: var(--primeDark4);
+  --tapActiveBg: var(--primeDark4);
+  --tapActiveText: var(--primeLight1);
+  --tapBg: var(--primeLight1);
+  --tapText: var(--primeDark4);
+  --bgNav: var(--primeLight2);
+  --textbanner: var(--white);
+  --bgbanner: var(--primeLight2);
+
+  /* Typography */
+  --baseFontSize: 112.5%;
+  --bodyFont: "Overpass", sans-serif;
+  --headingFont: "Chivo", sans-serif;
+  --h1: 34px;
+  --h2: 32px;
+  --h3: 20px;
+  --h4: 18px;
+  --h5: 16px;
+  --smallText: 0.8rem;
+  /* Styles */
+  --line: 1px solid var(--primeDark4);
+  --tapborder: 2px solid var(--primeDark4);
+  --icon-height: 27px;
+  --icon-width: 27px;
+  --icon-color: var(--primeDark4);
+  --tapRadius: 23px;
+}
+
+/**
+ * General
+ */
+
+html {
+  font-size: var(--baseFontSize);
+}
+
+body {
+  background: var(--background);
+  font-family: var(--bodyfont);
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--textColor);
+  border: none;
+  border-top: var(--line);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/*
+ * Typography
+ */
+
+p {
+  font-size: var(--h5);
+  color: var(--textColor);
+}
+
+blockquote {
+  margin: 10px;
+  padding: 2em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: var(--headingfont);
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--textColor);
+}
+
+h1 {
+  margin-top: 0;
+  font-size: var(--h1);
+  font-weight: bold;
+  font-style: italic;
+}
+
+h2 {
+  font-size: var(--h2);
+  font-weight: bold;
+}
+
+h3 {
+  font-size: var(--h3);
+  font-weight: bold;
+}
+
+h4 {
+  font-size: var(--h4);
+  font-style: italic;
+}
+
+h5 {
+  font-size: var(--h5);
+  font-style: italic;
+  margin: 2px;
+}
+small,
+.text_small {
+  font-size: var(--smallText);
+}
+
+/**
+ * Colors
+ */
+
+.color {
+  height: 100px;
+  border: var(--line);
+}
+
+.color-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 40em;
+  grid-gap: 1.25rem;
+  row-gap: 1.25rem;
+}
+
+@media only screen and (min-width: 31.25rem) {
+  .color-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/**
+ * buttons
+ */
+button {
+  font-family: var(--bodyFont);
+  background: var(--buttonBackground);
+  color: var(--buttonText);
+  outline: none;
+  border: none;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 9px 15px;
+  cursor: pointer;
+}
+button[disabled] {
+  opacity: 0.4;
+  cursor: initial;
+}
+button:hover {
+  opacity: 0.8;
+}
+button[disabled]:hover {
+  opacity: 0.4;
+}
+
+/*secendaty buttons*/
+button.secondary-button {
+  background: var(--neutral);
+  color: var(--neutralLight1);
+}
+/*tertiare buttons*/
+button.tertiare-button {
+  background: none;
+  color: var(--buttonText);
+  border: var(--line);
+}
+
+/**
+ * Forms
+ */
+input[type="text"] {
+  color: var(--textColor);
+  border: none;
+  padding: 9px 15px;
+  font-family: var(--bodyFont);
+  font-size: var(--smallText);
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: var(--line);
+  background: none;
+}
+input[type="number"] {
+  color: var(--textColor);
+  border: none;
+  padding: 9px 15px;
+  font-family: var(--bodyFont);
+  font-size: var(--smallText);
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: var(--line);
+  background: none;
+}
+input[type="email"] {
+  color: var(--textColor);
+  border: none;
+  padding: 9px 15px;
+  font-family: var(--bodyFont);
+  font-size: var(--smallText);
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: var(--line);
+  background: none;
+}
+input[type="password"] {
+  color: var(--textColor);
+  border: none;
+  padding: 9px 15px;
+  font-family: var(--bodyFont);
+  font-size: var(--smallText);
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: var(--line);
+  background: none;
+}
+textarea {
+  background-color: var(--white);
+  border: var(--line);
+}
+
+/**
+ * header
+ */
+header nav {
+  background-color: var(--bgNav);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+header nav .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav .links a {
+  color: var(--textColor);
+  text-decoration: none;
+  padding: 0 1rem;
+  font-size: var(--h2);
+  font-family: var(--bodyFont);
+}
+header nav .links a:hover {
+  opacity: 0.6;
+}
+header nav .active {
+  border-bottom: var(--line);
+}
+.hero {
+  font-family: var(--bodyFont);
+  background-image: url(../images/Schermafbeelding\ 2023-05-21\ 175930.jpg);
+  background-size: cover;
+  color: var(--white);
+  font-weight: bold;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.hero .content {
+  margin-left: 10%;
+}
+.hero .content h1 {
+  font-size: var(--h1);
+  color: #000;
+}
+.hero .content p {
+  margin: 0;
+  font-size: var(--h5);
+}
+
+.banner {
+  font-family: var(--bodyFont);
+  background-color: var(--primeDark4);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+/**
+ * footer
+ */
+footer {
+  font-family: var(--bodyFont);
+  color: var(--primeDark4);
+  border: none;
+  border-top: var(--line);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+footer div {
+  padding: 1rem;
+}
+footer div p {
+  margin: 0;
+}
+
+/**
+ * card
+ */
+.card {
+  font-family: var(--bodyFont);
+  background-color: var(--primeLight2);
+  color: var(--primeDark4);
+  border: var(--line);
+  border-radius: 3px;
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card img {
+  width: 100%;
+  height: 25%;
+}

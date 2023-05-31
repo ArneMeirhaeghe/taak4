@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>A Design System Template</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="img/logo" alt="logo" />
+        </div>
+        <div class="links">
+          <a class="active" href="#">Menu</a>
+          <a href="#">About</a>
+          <a href="#">Takeaway</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="content">
+          <h2>Sultan's Kitchen</h2>
+          <p>Korenmarkt 25</p>
+          <p>9000 Gent</p>
+          <p>België</p>
+          <div class="icons">
+            <a href="#"><img src="/fb" alt="fb" /></a>
+            <a href="#"><img src="/insta" alt="insta" /></a>
+            <a href="#"><img src="/trip" alt="trip" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="banner">
+        <h1>Beste Turks restaurant van de streek</h1>
+      </div>
+    </header>
+
+    <main class="layout">
+      <div class="container">
+        <h1 class="h1" id="typography">A Visual Type Scale</h1>
+        <p>
+          Lorem ipsum dolor sit amet <a href="#">consectetur</a>, adipisicing
+          elit. Odit autem eum vel sunt dolores est optio! Praesentium fugit aut
+          quod facilis laboriosam dicta ipsa, eaque, repellendus natus iure
+          dignissimos modi. Lorem ipsum dolor sit amet consectetur, adipisicing
+          elit. Odit autem eum vel sunt dolores est optio! Praesentium fugit aut
+          quod facilis laboriosam dicta ipsa, eaque, repellendus natus iure
+          dignissimos modi.
+        </p>
+        <h2 class="h2">A Visual Type Scale</h2>
+        <blockquote>
+          Lorem ipsum dolor sit amet <a href="#">consectetur</a>, adipisicing
+          elit. Odit autem eum vel sunt dolores est optio! Praesentium fugit aut
+          quod facilis laboriosam dicta ipsa, eaque, repellendus natus iure
+          dignissimos modi. Lorem ipsum dolor sit amet consectetur, adipisicing
+          elit. Odit autem eum vel sunt dolores est optio! Praesentium fugit aut
+          quod facilis laboriosam dicta ipsa, eaque, repellendus natus iure
+          dignissimos modi.
+        </blockquote>
+        <h3 class="h3">A Visual Type Scale</h3>
+        <h4 class="h4">A Visual Type Scale</h4>
+        <h5 class="h5">A Visual Type Scale</h5>
+        <small>A Visual Type Scale</small>
+      </div>
+
+      <hr />
+
+      <div class="container">
+        <h2 id="colors">Colors</h2>
+
+        <h3 class="h5">General</h3>
+        <div class="color-grid">
+          <div class="color" style="background: var(--black)"></div>
+          <div class="color" style="background: var(--white)"></div>
+        </div>
+        <h2>Primary</h2>
+        <br />
+        <div class="color-grid">
+          <div class="color" style="background: var(primeLight1)"></div>
+          <div class="color" style="background: var(--primeLight2)"></div>
+          <div class="color" style="background: var(--primeLight3)"></div>
+          <div class="color" style="background: var(--primeLight4)"></div>
+          <div class="color" style="background: var(--prime)"></div>
+          <div class="color" style="background: var(--primeDark1)"></div>
+          <div class="color" style="background: var(--primeDark2)"></div>
+          <div class="color" style="background: var(--primeDark3)"></div>
+          <div class="color" style="background: var(--primeDark4)"></div>
+        </div>
+        <h2>Secondary</h2>
+        <br />
+        <div class="color-grid">
+          <div class="color" style="background: var(--secondaryLight1)"></div>
+          <div class="color" style="background: var(--secondaryLight2)"></div>
+          <div class="color" style="background: var(--secondaryLight3)"></div>
+          <div class="color" style="background: var(--secondaryLight4)"></div>
+          <div class="color" style="background: var(--secondary)"></div>
+          <div class="color" style="background: var(--secondaryDark1)"></div>
+          <div class="color" style="background: var(--secondaryDark2)"></div>
+          <div class="color" style="background: var(--secondaryDark3)"></div>
+          <div class="color" style="background: var(--secondaryDark4)"></div>
+        </div>
+        <h2>Neutrals</h2>
+        <br />
+        <div class="color-grid">
+          <div class="color" style="background: var(--neutralLight1)"></div>
+          <div class="color" style="background: var(--neutralLight2)"></div>
+          <div class="color" style="background: var(--neutralLight3)"></div>
+          <div class="color" style="background: var(--neutralLight4)"></div>
+          <div class="color" style="background: var(--neutral)"></div>
+          <div class="color" style="background: var(--neutralDark1)"></div>
+          <div class="color" style="background: var(--neutralDark2)"></div>
+          <div class="color" style="background: var(--neutralDark3)"></div>
+          <div class="color" style="background: var(--neutralDark4)"></div>
+        </div>
+        <h2>supp</h2>
+        <br />
+        <div class="color-grid">
+          <div class="color" style="background: var(--supp)"></div>
+        </div>
+        <hr />
+
+        <div class="container">
+          <h2 id="buttons">Buttons</h2>
+
+          <h3>Primary Buttons</h3>
+
+          <button>Primary Button</button>
+          <button disabled>Disabled</button>
+          <button>Button with long text</button>
+          <button>Button &xrarr;</button>
+          <br /><br />
+
+          <h3>Secondary Buttons</h3>
+
+          <button class="secondary-button">Secondary Button</button>
+          <button class="secondary-button" disabled>Disabled</button>
+          <button class="secondary-button">
+            Secondary button with long text
+          </button>
+          <button class="secondary-button">Button &xrarr;</button>
+          <h3>tertiare Buttons</h3>
+
+          <button class="tertiare-button">Tertiare Button</button>
+          <button class="tertiare-button" disabled>Disabled</button>
+          <button class="tertiare-button">
+            Tertiare button with long text
+          </button>
+          <button class="tertiare-button">Button &xrarr;</button>
+        </div>
+
+        <hr />
+
+        <div class="container">
+          <h2 id="forms">Forms</h2>
+          <form action="#">
+            <div class="flex">
+              <p>
+                <label for="text">Text</label
+                ><input placeholder="Tim De Paepe" type="text" id="text" />
+              </p>
+              <p>
+                <label for="number">Number</label
+                ><input type="number" id="number" />
+              </p>
+              <p>
+                <label for="email">Email</label
+                ><input type="email" id="email" />
+              </p>
+              <p>
+                <label for="password">Password</label
+                ><input type="password" id="password" />
+              </p>
+            </div>
+            <p>
+              <label for="textarea">Textarea</label><br />
+              <textarea rows="4" cols="50" id="textarea">
+Default Value</textarea
+              >
+            </p>
+          </form>
+        </div>
+
+        <hr />
+
+        <div class="container">
+          <h2 id="extra">Extra</h2>
+          <h3>cards</h3>
+          <div class="card">
+            <img src="img/gerecht.png" alt="gerecht" />
+
+            <h3>naam</h3>
+            <h4>prijs</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              voluptatum, quibusdam, voluptate, quia voluptas quod
+              exercitationem quos voluptatibus quae doloribus quidem voluptatem.
+              Quisquam, voluptates. Quisquam, voluptates.
+            </p>
+          </div>
+        </div>
+
+        <hr />
+
+        <h2 id="layout">Layout</h2>
+        <h3>Grid</h3>
+
+        <h3>Split</h3>
+      </div>
+    </main>
+    <footer>
+      <div class="adres">
+        <h3>Sultan's Kitchen</h3>
+        <h5>Korenmarkt 25</h5>
+        <h5>9000 Gent</h5>
+        <h5>België</h5>
+      </div>
+      <div class="openingsuren">
+        <h3>Openingsuren</h3>
+        <h5>Maandag 11:00-22-00</h5>
+        <h5>Dinsdag 11:00-22-00</h5>
+        <h5>Woensdag 11:00-22-00</h5>
+        <h5>Donderdag 11:00-22-00</h5>
+        <h5>Vrijdag 11:00-22-00</h5>
+        <h5>Zaterdag 11:00-22-00</h5>
+        <h5>Zondag 11:00-22-00</h5>
+      </div>
+      <div class="info">
+        <h3>Info en reserveringen</h3>
+        <h5>Contact: 09 223 23 23</h5>
+        <div class="icons">
+          <a href="#"><img src="/fb" alt="fb" /></a>
+          <a href="#"><img src="/insta" alt="insta" /></a>
+          <a href="#"><img src="/trip" alt="trip" /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
